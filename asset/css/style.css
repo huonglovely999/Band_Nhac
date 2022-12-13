@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul > li {
+    list-style-type: none;
+}
+#header {
+    background-color: #000;
+    height: 46px;
+    display: inline-flexbox;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+#nav {
+    display: inline-block;
+    height: 40px;
+}
+#nav li {
+    display: inline-block;
+}
+#nav nav-arrow-down {
+    font-size: 12px;
+    color: red;
+}
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    /* Set  display: inline-block để tạo width theo thẻ; */
+}
+#nav li:hover > a {
+    background-color: #ccc !important;
+    color: #000;
+}
+#nav li:hover .sub-nav {
+    display: grid;
+    /* Hover vào nav li của sub-nav */
+}
+
+#nav .sub-nav {
+    display: none;
+    position: absolute;
+    top: 46px;
+    background-color: #000;
+    text-align: justify;
+    padding: 0;
+}
+#nav .sub-nav a {
+    width: 100%;
+}
+
+#header .search-btn {
+    float: right;
+    /* Float để đẩy icon sang hướng muốn vì nó là thẻ div có tính chất khối */
+    line-height: 46px;
+    padding: 0 24px;
+}
+#header .search-btn:hover {
+    background-color: red !important;
+    cursor: pointer;
+}
+#header .search-icon {
+    color: #fff;
+    font: 16px;
+}
+/* Slider **********************/
+#slider {
+    margin-top: 46px;
+}
+/* Content **********************/
+#content-section {
+    background-color: rgb(29, 28, 28) !important;
+    color: #fff;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+}
+.section-heading {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+.section-sub {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content-section .about {
+    text-align: justify;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    opacity: 0.8;
+}
+/* Content info ******************/
+#content-info {
+    background-color: rgb(51, 47, 47) !important;
+    width: 60%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+#content-info .member-item {
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+#content-info .menber-img {
+    width: 150px;
+}
+/* End content-info ****************/
+/* Tour *******************/
+#ticket-tour {
+    background-color: #000;
+    position: relative;
+}
+.wrap-tour {
+    color: #fff;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    margin-top: 19rem;
+}
+/* Ticket *************************/
+#ticket-tour {
+    position: relative;
+    padding-bottom: 2rem;
+}
+.ticket-info {
+    display: inline-block;
+    width: 734px;
+    padding-top: 2rem;
+    opacity: 0.8;
+}
+.ticket-info .ticket-sub-info {
+    border: 1px solid #ddd;
+    max-width: 734px;
+    padding: 0;
+    text-align: justify;
+    right: 20px;
+    background-color: rgb(43, 40, 40) !important;
+}
+
+.ticket-info .ticket-sub-info li {
+    max-width: 734px;
+    margin: auto;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 70%;
+}
+.ticket-info .ticket-sub-info .sold-out1 {
+    background-color: red !important;
+    padding-left: 8px;
+    padding-right: 8px;
+    opacity: 0.8;
+}
+.ticket-info .ticket-sub-info .sold-out2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+/* ticket location *********************/
+#ticket-location {
+    width: 100%;
+    display: inline-flex;
+    text-align: justify;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-color: #000;
+    padding-left: 23%;
+}
+#ticket-location .ticket-sub-location {
+    width: 70%;
+    display: inline-flex;
+    position: relative;
+}
+.ticket-sub-location .ticket-info-location {
+    width: 60%;
+    margin: 0 10px;
+    background-color: rgb(28, 28, 28);
+}
+.ticket-info-location span,
+.ticket-info-location h4,
+.ticket-info-location p {
+    color: aliceblue;
+    font-size: 15px;
+    padding-top: 1rem;
+    padding-left: 25px;
+    width: 90%;
+}
+.ticket-info-location .ticket-img {
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+    text-align: center;
+}
+.ticket-info-location .buy-ticket {
+    margin: 0 10%;
+    background: #000;
+    color: #fff;
+    margin: 2rem;
+    padding: 5px 15px;
+    font-weight: 700;
+    opacity: 0.7;
+}
+.ticket-info-location .buy-ticket:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Contact ****************************/
+#contact {
+    background-color: rgb(28, 28, 28);
+    width: 100%;
+}
+.contact-info {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #000;
+}
+#contact .contact-sub {
+    width: 100%;
+    float: left;
+}
+#contact .contact-sub .row {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
