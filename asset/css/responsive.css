@@ -1,0 +1,20 @@
+/* Responsive mobile */
+@media (min-width: 601px) {
+    .search-menu {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    #nav ul {
+        display: table-caption;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #header .search-btn {
+        display: none;
+    }
+    .ticket-info .ticket-sub-info {
+        max-width: 583px;
+    }
+}
