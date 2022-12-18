@@ -1,20 +1,38 @@
-/* Responsive mobile */
-@media (min-width: 601px) {
-    .search-menu {
-        display: none;
-    }
-}
+/* Responsive table */
 @media (max-width: 600px) {
     #nav ul {
         display: table-caption;
     }
     #header {
         overflow: hidden;
+        width: 100%;
     }
     #header .search-btn {
         display: none;
     }
+    #content-info {
+        width: 35rem;
+    }
     .ticket-info .ticket-sub-info {
         max-width: 583px;
+    }
+    #ticket-location {
+        display: flex;
+        padding-left: 10%;
+    }
+    #contact {
+        max-width: 583px;
+        font-size: 15px;
+    }
+    #contact .contact-sub {
+        display: inline-block;
+        position: absolute;
+        left: -50px;
+        width: 410px;
+    }
+}
+@media (min-width: 740px) {
+    .search-menu {
+        display: none;
     }
 }
