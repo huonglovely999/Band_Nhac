@@ -25,6 +25,9 @@ ol ul {
     display: inline-block;
     height: 40px;
 }
+#nav ul {
+    padding-left: 0;
+}
 #nav li {
     display: inline-block;
 }
