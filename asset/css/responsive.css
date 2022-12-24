@@ -1,45 +1,46 @@
-/* Responsive table */
-@media (max-width: 600px) {
-    #nav ul {
-        display: flex;
-    }
-    #header {
-        overflow: hidden;
-        max-width: 583px;
-        left: 0;
-    }
-    #content-info {
-        width: 35rem;
-    }
-    .ticket-info .ticket-sub-info {
-        max-width: 583px;
-    }
-    #ticket-location {
-        display: flex;
-        padding-left: 10%;
-    }
-    #contact {
-        max-width: 583px;
-        font-size: 15px;
-    }
-    #contact .contact-sub {
-        display: inline-block;
-        position: absolute;
-        left: -50px;
-        width: 410px;
-    }
+/* PC */
+@media (min-width: 1024px) {
     .search-menu {
         display: none;
-    }
-    .search-btn {
-        display: inline-block;
     }
 }
-@media (min-width: 767px) {
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
     .search-menu {
         display: none;
     }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    #nav {
+        max-width: 93px;
+        overflow: hidden;
+    }
+    #header .search-btn {
+        display: none;
+    }
     #content-info {
+        display: contents;
+        width: auto;
+    }
+    .wrap-tour {
+        margin-top: 200px;
+    }
+    .ticket-info {
+        width: 100%;
+    }
+    #ticket-location {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .ticket-sub-location .ticket-info-location {
+        width: auto;
+        margin: 6px;
+    }
+    #contact {
         width: 100%;
     }
 }
