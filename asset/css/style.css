@@ -110,22 +110,31 @@ ol ul {
     margin-right: auto;
     font-size: 15px;
     opacity: 0.8;
-}
+content-inf}
 /* Content info ******************/
 #content-info {
-    background-color: rgb(51, 47, 47) !important;
-    width: 60%;
+    background-color: rgb(29, 28, 28) !important;
+    width: 100%;
+    display: flex;
     margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    padding-top: 64px;
+    padding-bottom: 130px;
 }
 #content-info .member-item {
     float: left;
     width: calc(100% / 3);
     text-align: center;
 }
-#content-info .menber-img {
+#content-info .member-img {
     width: 150px;
+    border-radius: 3%;
+}
+#content-info .content-wrap {
+    width: 50%;
+    margin: auto;
+}
+.member-img{
+    border: ;
 }
 /* End content-info ****************/
 /* Tour *******************/
@@ -138,7 +147,6 @@ ol ul {
     padding-top: 64px;
     padding-bottom: 64px;
     text-align: center;
-    margin-top: 19rem;
 }
 /* Ticket *************************/
 #ticket-tour {
@@ -212,6 +220,9 @@ ol ul {
     position: relative;
     text-align: center;
 }
+.ticket-info-location .ticket-img:hover{
+    opacity: 0.5;
+}
 .btn {
     margin: 0 10%;
     background: #000;
@@ -253,6 +264,7 @@ ol ul {
 }
 .row {
     position: relative;
+    width: 100%;
 }
 
 .col {
@@ -312,7 +324,6 @@ ol ul {
 }
 .footer-link .social-icon a:hover {
     color: red;
-    size: 20px;
 }
 .footer-link .copy-right a {
     text-decoration: none;

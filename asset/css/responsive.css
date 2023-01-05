@@ -43,4 +43,7 @@
     #contact {
         width: 100%;
     }
+    #ticket-location .ticket-sub-location {
+        width: 100%;
+    }
 }
