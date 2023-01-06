@@ -196,7 +196,7 @@ content-inf}
     padding-left: 20%;
 }
 #ticket-location .ticket-sub-location {
-    width: 70%;
+    width: 75%;
     display: inline-flex;
     position: relative;
 }
@@ -255,7 +255,7 @@ content-inf}
 #contact {
     background-color: rgb(35, 45, 52);
     font-size: 18px;
-    height: 23rem;
+    height: 35rem;
 }
 #contact .contact-sub {
     width: 60%;
@@ -276,7 +276,7 @@ content-inf}
     width: 100%;
 }
 .col-half {
-    width: 50%;
+    width: 100%;
     padding: 0 0;
 }
 .row-info .contact-p {
@@ -292,7 +292,7 @@ content-inf}
     display: flex;
 }
 .font-ctr-messenger {
-    width: 200%;
+    width: 100%;
 }
 .row .button-contact {
     position: absolute;

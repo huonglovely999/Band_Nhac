@@ -1,49 +1,154 @@
-/* PC */
-@media (min-width: 1024px) {
-    .search-menu {
-        display: none;
-    }
-}
-
-/* Tablet */
-@media (min-width: 740px) and (max-width: 1023px) {
-    .search-menu {
-        display: none;
-    }
-}
-
-/* Mobile */
-@media (max-width: 739px) {
+/* điện thoại di động: max-width 320px khi hiển thị chiều dọc và 480px khi hiển thị chiều ngang. */
+@media (min-width: 375px) and (max-width: 599px) {
     #nav {
-        max-width: 93px;
         overflow: hidden;
     }
-    #header .search-btn {
+    #nav li {
+        display: flex;
+    }
+    #nav li a {
+    }
+    .section-heading {
+        padding-top: 2rem;
+    }
+    .search-btn {
         display: none;
     }
-    #content-info {
-        display: contents;
-        width: auto;
+    #content-section .about {
+        width: 90%;
     }
-    .wrap-tour {
-        margin-top: 200px;
+    #content-section {
+        padding-bottom: 1rem;
+    }
+    #content-info {
+    }
+    #content-info .content-wrap {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        justify-content: space-around;
+    }
+    #content-info .member-item {
+        width: 100%;
     }
     .ticket-info {
-        width: 100%;
+        width: 95%;
+    }
+    .ticket-sub-info {
+        padding-left: 2rem;
     }
     #ticket-location {
         width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .ticket-sub-location .ticket-info-location {
-        width: auto;
-        margin: 6px;
-    }
-    #contact {
-        width: 100%;
+        padding: inherit;
+        padding-bottom: 3rem;
     }
     #ticket-location .ticket-sub-location {
         width: 100%;
+        display: grid;
+        justify-items: center;
+    }
+    .ticket-sub-location .ticket-info-location {
+        width: auto;
+    }
+    #contact {
+        height: 35rem;
+    }
+    #contact .contact-sub {
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+    .contact-p {
+        padding-left: 2rem;
+    }
+    .row-info {
+        width: 100%;
+        display: grid;
+        margin: auto;
+    }
+    .row-form {
+        width: 90%;
+        padding-left: 2rem;
+    }
+    .col-half {
+        width: 100%;
+    }
+    .font-ctr-messenger {
+        width: 100%;
+    }
+    .contact-info {
+        display: contents;
+    }
+    .contact-form {
+    }
+    .row .button-contact {
+        left: 67%;
+    }
+    .map-section {
+    }
+}
+
+/* SMOL TABLE *************/
+@media (min-width: 600px) and (max-width: 767px) {
+    #nav ul {
+        display: flex;
+    }
+    .search-btn {
+    }
+    .search-menu {
+        display: none;
+    }
+    #content-section .about {
+        width: 90%;
+    }
+    #content-info {
+        width: 100%;
+    }
+    #content-info .content-wrap {
+        width: 90%;
+    }
+    .ticket-info {
+        width: 95%;
+    }
+    .ticket-sub-info {
+        padding-left: 2rem;
+    }
+    #ticket-location {
+        padding: 5rem 10%;
+    }
+    #contact .contact-sub {
+        width: 100%;
+        margin: auto;
+        padding-left: 5rem;
+        display: flex;
+    }
+    .contact-form {
+        width: 100%;
+        display: contents;
+    }
+    .row .button-contact {
+        left: 0;
+    }
+}
+
+/* PC */
+@media (min-width: 768px) {
+    .search-menu {
+        display: none;
+    }
+    #contact .contact-sub {
+        margin-left: 23%;
+    }
+    #content-info .content-wrap {
+        width: 70%;
+    }
+    #content-info .member-item {
+    }
+    .row-info {
+        display: inline-block;
+        margin: auto;
+    }
+    .row .button-contact {
+        left: 0;
     }
 }
